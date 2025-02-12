@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Evita que padding afecte el tamaño total */
+    box-sizing: border-box;
 }
 
 body {
@@ -25,8 +25,9 @@ nav {
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinea todo al centro */
+    align-items: center;
     z-index: 1000;
+    border-bottom: 1px solid #BA1F00;
 }
 
 .logo img {
@@ -75,21 +76,23 @@ nav {
 /* Redes Sociales */
 .socialmedia {
     display: flex;
-    align-items: center; /* Alinea todos los elementos al centro */
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin-top: 0; /* Asegura que no haya un margen superior innecesario */
+    align-items: center;
+    
+    margin-top: 0;
 }
 
 .socialmedia p {
-    margin: 0; /* Elimina márgenes innecesarios */
+    margin: 0;
     display: flex;
-    align-items: center; /* Alinea el texto y la imagen */
+    align-items: center;
+    color: #E4DDDB;
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 
 .socialmedia img {
-    height: 20px; /* Ajusta la altura de la imagen */
-    margin-left: 3px; /* Espacio entre el texto y la imagen */
+    height: 20px;
+    margin-left: 3px; 
     margin-top: 3px;
 }
 
@@ -124,16 +127,16 @@ section {
 
 .text-container {
     display: flex;
-    justify-content: space-between; /* Separa el título del texto */
+    justify-content: space-between;
     align-items: center;
-    width: 80%; /* Ajusta según necesidad */
-    margin: auto; /* Centra horizontalmente */
-    flex-wrap: wrap; /* Permite mejor adaptación en móviles */
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .title {
-    width: 30%; /* Ajusta según el tamaño del título */
-    text-align: left; /* Alinea a la izquierda */
+    width: 30%;
+    text-align: left;
     color: #E4DDDB;
     text-align: center;
 }
@@ -148,7 +151,7 @@ section {
 .description {
     width: 60%;
     text-align: justify;
-    border-left: 2px solid #E4DDDB; /* Línea decorativa */
+    border-left: 2px solid #E4DDDB;
     padding-left: 20px;
     color: #E4DDDB;
 }
@@ -168,8 +171,19 @@ section {
 
 /* Sección de servicios */
 .service-container {
-    background-color: #202020;
+    background-color: #E4DDDB;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.service-container div{
+    height: 20rem;
+    width: 12rem;
+    background-color: #202020;
+    border-radius: 16px;
 }
 
 /* ------------- SCROLL ENTRE SECCIONES ------------- */
