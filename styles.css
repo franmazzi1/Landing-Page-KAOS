@@ -160,7 +160,9 @@ section {
 .description h3 {
     margin-bottom: 10px;
     color: #BA1F00;
+    font-size: 1.25rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .description span {
