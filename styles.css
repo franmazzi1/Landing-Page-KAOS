@@ -22,12 +22,12 @@ nav {
     left: 0;
     width: 100%;
     background-color: #0D0C0C;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    border-bottom: 1px solid #BA1F00;
+    border-bottom: 2px solid #BA1F00;
 }
 
 .logo img {
@@ -151,7 +151,7 @@ section {
 .description {
     width: 60%;
     text-align: justify;
-    border-left: 2px solid #E4DDDB;
+    border-left: 2px solid #BA1F00;
     padding-left: 20px;
     color: #E4DDDB;
 }
@@ -181,12 +181,22 @@ section {
     gap: 4rem;
 }
 
+
 .service-container div{
+    display: flex;
+    flex-direction: column;
+    
     height: 20rem;
     width: 15rem;
     background-color: #202020;
     border-radius: 16px;
     padding: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4); 
+}
+.service-container div:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
 }
 .service-container div h5{
     margin-bottom: 10px;
@@ -197,7 +207,7 @@ section {
 .service-container div h7{
     border: 1px solid #E4DDDB;
     color: #E4DDDB;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     display: inline-block;
     width: 100%;
@@ -205,9 +215,45 @@ section {
     margin-bottom: 20px;
     border-radius: 16px;
 }
+.service-container div ul{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    
+
+}
 .service-container div li{
     color: #E4DDDB;
-    margin: 5px 15px;
+    font-size: 10px;
+    padding: 5px 0;
+    
+    
+}
+.service-container div li span{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 12px;
+}
+.service-container div button{
+    color: #E4DDDB;
+    font-weight: 700;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid #E4DDDB;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.service-container div button:hover{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+    background-color: #181818;
 }
 
 /* ------------- SCROLL ENTRE SECCIONES ------------- */
@@ -243,19 +289,31 @@ html {
     }
 
     .text-container {
-        width: 90%;
+        width: 80%;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .title {
-        width: 100%;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .title p{
+        font-size: 0.75rem;
     }
 
     .description {
         border-left: none;
-        border-top: 1px solid #E4DDDB;
+        border-top: 1px solid #BA1F00;
         padding-top: 10px;
+        width: 90%;
     }
+    .description h3{
+        font-size: 1rem;
+    }
+    .description p{
+        font-size: 0.75rem;
+    }
+    
 }
