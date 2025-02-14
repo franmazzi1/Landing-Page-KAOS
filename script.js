@@ -1,6 +1,10 @@
 document.getElementById("menu-toggle").addEventListener("click", function() {
     document.getElementById("nav-links").classList.toggle("active");
 });
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("socialmedia").classList.toggle("active");
+});
+
 let currentIndex = 0;
 const sections = document.querySelectorAll("section");
 
