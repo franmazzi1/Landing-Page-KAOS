@@ -75,40 +75,6 @@ nav {
     color: #E4DDDB;
 }
 
-/* Redes Sociales */
-.socialmedia {
-    display: flex;
-    align-items: center;
-    
-    margin-top: 0;
-}
-
-.socialmedia p {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    color: #E4DDDB;
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-
-.socialmedia img {
-    height: 20px;
-    margin-left: 3px; 
-    margin-top: 3px;
-}
-
-.socialmedia a {
-    transition: all 0.3s;
-    margin-left: 5px;
-}
-
-.socialmedia a:hover {
-    filter: brightness(0) invert(1);
-}
-
-
-
 /* ------------- SECCIONES ------------- */
 section {
     display: flex;
@@ -358,7 +324,7 @@ section {
 }
 
 
-/* -------------   ------------- */
+/* ------------- FOOTER ------------- */
 footer {
     position: relative;
     bottom: 0;
@@ -434,33 +400,8 @@ html {
     .nav-links li {
         margin: 10px 0;
     }
-    .socialmedia {
-        display: none;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-
-    }
     
-    .socialmedia.active {
-        display: flex; 
-        position: absolute;
-        top: 200px;
-        right: 0;
-        background: #0D0C0C;
-        padding: 10px 0;
-        justify-content: right;
-        
-    }
-    .socialmedia p{
-        display: none;
-    }
-    .socialmedia a{
-        padding-right: 20px;
-    }
-    .socialmedia img{
-        height: 30px;
-    }
+    
     
 
     
@@ -513,6 +454,10 @@ html {
     }
     footer div{
         display: none;
+    }
+    footer a{
+        font-size: 0.875rem;
+
     }
     
     
