@@ -7,11 +7,7 @@
 body {
     color: #BA1F00;
     font-family: 'Fustat', sans-serif;
-    background-image: url(resources/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 80px; 
+    
     overflow-x: hidden;
     background-attachment: fixed;
 }
@@ -89,8 +85,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0D0C0C;
-
+    background-image: url(resources/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text-container {
@@ -247,7 +245,7 @@ section {
 .method-header {
     max-width: 800px;
     width: 90%;
-    margin: 0 auto 80px;
+    margin: 0 auto 30px;
     
 }
 
@@ -265,16 +263,14 @@ section {
     line-height: 1.6;
     text-align: justify;
 }
-
-.numbers img{
-    position: relative;
-    right: 5px;
-    width: 100%;
-}
-
 .numbers{
-    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
     padding: 0;
+}
+.numbers img{
+    width: 100%;
+    max-width: 1400px;
 }
 /* Contenedor de los pasos */
 .method-steps {
